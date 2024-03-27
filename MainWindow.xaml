@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
-        Title="Окно Авторизации" Height="450" Width="700" Background="MediumAquamarine" Closing="Window_Closing" >
+        Title="Окно Авторизации" Height="450" Width="700" Background="MediumAquamarine" Closing="Window_Closing" WindowStartupLocation="CenterScreen" >
     <Canvas x:Name="Se">
         <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="32" Width="240" Canvas.Left="240" Canvas.Top="210" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="31" Width="240" Canvas.Left="240" Canvas.Top="273" HorizontalAlignment="Center" VerticalAlignment="Top"/>

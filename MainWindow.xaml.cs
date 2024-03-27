@@ -27,16 +27,21 @@ namespace WpfApp3
         }
 
         private void reg_Click(object sender, RoutedEventArgs e)
+
         {
+            
             Window1 reg = new Window1();
 
             reg.Show();
             this.Hide();
         }
 
+
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Environment.Exit(0);
         }
+
+      
     }
 }

@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp3.Windows"
         mc:Ignorable="d"
-        Title="Окно регистрации" Height="450" Width="700" Background="MediumAquamarine">
+        Title="Окно регистрации" Height="450" Width="700" Background="MediumAquamarine" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Canvas>
-        <TextBox Text="asdasd" FontSize="110" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="204"/>
-        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="254" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="304"/>
-        <Button Content="Зарегистрироваться" Canvas.Bottom="50" Canvas.Right="310" FontSize="15" HorizontalAlignment="Left" Canvas.Left="260" Canvas.Top="344" VerticalAlignment="Center" Width="200"/>
+        <TextBox Text="asdasd" FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top" Name="EmailTextBox"/>
+        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="204" TextChanged="TextBox_TextChanged" Name="LoginTextBox"/>
+        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="254" HorizontalAlignment="Center" VerticalAlignment="Top" Name="passwordBox"/>
+        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="304" Name="passwordBox1"/>
+        <Button Content="Зарегистрироваться" Click="Button_Click" Canvas.Bottom="50" Canvas.Right="310" FontSize="15" HorizontalAlignment="Left" Canvas.Left="260" Canvas.Top="344" VerticalAlignment="Center" Width="200"/>
         <TextBlock FontSize="15" Text="email" TextWrapping="Wrap" TextAlignment="Center" Height="30" Width="240"  HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="138" Canvas.Top="132"/>
         <TextBlock FontSize="12" Text="Логин" TextWrapping="Wrap" TextAlignment="Center" Height="16" Width="104"  HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="206" Canvas.Top="188"/>
         <TextBlock FontSize="12" Text="Пароль" TextWrapping="Wrap" TextAlignment="Center" Height="15" Width="136"  HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="194" Canvas.Top="238"/>
         <TextBlock FontSize="13" Text="Повторите пароль" TextWrapping="Wrap" TextAlignment="Center" Height="15" Width="160"  HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="218" Canvas.Top="287"/>
+        <Button Click="vhod_Click" Name="vhod" Content="Есть аккаунт? Войти!" Canvas.Bottom="70" Canvas.Right="310" FontSize="15" HorizontalAlignment="Center" Canvas.Left="282" Canvas.Top="378" VerticalAlignment="Top" Width="156" Background="Transparent"/>
     </Canvas>
 </Window>
