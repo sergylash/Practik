@@ -8,12 +8,38 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\1612883523_83-p-krasnii-fon-ad-155.jpg" />
+    <None Remove="images\free-icon-open-data-3513745.png" />
+    <None Remove="images\free-icon-transparency-1076744 - Копировать.png" />
+    <None Remove="images\free-icon-transparency-1076744.png" />
+    <None Remove="images\free-icon-transparency-12855605.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\1612883523_83-p-krasnii-fon-ad-155.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\free-icon-open-data-3513745.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\free-icon-transparency-1076744 - Копировать.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\free-icon-transparency-1076744.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\free-icon-transparency-12855605.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

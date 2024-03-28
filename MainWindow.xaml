@@ -7,22 +7,19 @@
         mc:Ignorable="d"
         Title="Окно Авторизации" Height="450" Width="700" Background="MediumAquamarine" Closing="Window_Closing" WindowStartupLocation="CenterScreen" >
     <Canvas x:Name="Se">
-        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="32" Width="240" Canvas.Left="240" Canvas.Top="210" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="31" Width="240" Canvas.Left="240" Canvas.Top="273" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button Content="Войти" Canvas.Bottom="70" Canvas.Right="310" FontSize="20" HorizontalAlignment="Center" Canvas.Left="320" Canvas.Top="314" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <Image Source="C:\Users\student\Desktop\WpfApp3\images\free-icon-transparency-1076744.png" Height="25" Canvas.Left="480" Width="26" Canvas.Top="276" HorizontalAlignment="Left" VerticalAlignment="Top" />
-        <Image Source="C:\Users\student\Desktop\WpfApp3\images\free-icon-transparency-1076744.png" Height="24" Canvas.Left="480" Width="26" Canvas.Top="214" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Image Source="C:\Users\student\Desktop\WpfApp3\images\free-icon-transparency-12855605.png" Height="38" Canvas.Left="202" Width="42" Canvas.Top="210" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform AngleX="0.255"/>
-                    <RotateTransform/>
-                    <TranslateTransform X="0.162"/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-        <Image Source="C:\Users\student\Desktop\WpfApp3\images\free-icon-open-data-3513745.png" Height="24" Canvas.Top="276" Width="30" Canvas.Left="204" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.75,0.023"/>
+        
+        <Button/>
+        <TextBox Name="log" FontSize="20" FontWeight="Medium" Background="Azure" Height="32" Width="240" Canvas.Left="240" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox Name="pas" FontSize="20" FontWeight="Medium" Background="Azure" Height="31" Width="240" Canvas.Left="240" Canvas.Top="273" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Content="Войти" Click="Button_Click" Canvas.Bottom="70" Canvas.Right="310" FontSize="20" HorizontalAlignment="Center" Canvas.Left="320" Canvas.Top="314" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+      
+        <Image Source="C:\Users\student\Desktop\WpfApp3\images\free-icon-transparency-1076744.png" Height="24" Canvas.Left="486" Width="26" Canvas.Top="217" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <Image Source="/images/free-icon-open-data-3513745.png" Height="26" Canvas.Top="276" Width="28" Canvas.Left="209" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+        <Image Source="/images/free-icon-transparency-12855605.png" Height="26" Canvas.Top="213" Width="26" Canvas.Left="212" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
         <Button Click="reg_Click" Name="reg" Content="Регистрация" Canvas.Bottom="70" Canvas.Right="310" FontSize="15" HorizontalAlignment="Left" Canvas.Left="290" Canvas.Top="352" VerticalAlignment="Center" Width="140" Background="Transparent"/>
+        <!--<Button Canvas.Left="486" Canvas.Top="273" Click="Button_Click_1" Name="psp">
+            <Image Source="/images/free-icon-transparency-1076744.png" Height="27" Width="27" HorizontalAlignment="Left" Canvas.Left="486" Canvas.Top="276" VerticalAlignment="Center" RenderTransformOrigin="-1.5,0.466" />
+        </Button>
+        <PasswordBox x:Name="passbox" />-->
     </Canvas>
 </Window>

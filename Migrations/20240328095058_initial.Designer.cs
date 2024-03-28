@@ -11,8 +11,8 @@ using WpfApp3.Classes;
 namespace WpfApp3.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240327124012_Initial")]
-    partial class Initial
+    [Migration("20240328095058_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

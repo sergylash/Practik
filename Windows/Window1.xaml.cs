@@ -43,18 +43,18 @@ namespace WpfApp3.Windows
         {
             var Login = LoginTextBox.Text;
             var pass = passwordBox.Text;
+            var email = EmailTextBox.Text;
             var context = new AppDbContext();
-            context.users.FirstOrDefault(x => x.Login == Login);
-            //var user_exists = context.User.
-            //    if (User != null)
-            //    {
-            //        MessageBox.Show("Пользователь уже зарегистрирован");
-            //        return;
-            //    }
-            //    var user = new User { Login = Login, Password = pass };
-            //    Contex.Users.Add(user);
-            //    Contex.SaveChanges();
-            //    MessageBox.Show("Welcome to the club buddy!!!");
+            var user_exists = context.users.FirstOrDefault(x => x.Login == Login);
+            if (user_exists is not null)
+            {
+                MessageBox.Show("Пользователь зарегистрирован");
+                return;
+            }
+            var user = new User { Login = Login, Password = pass, Email = email };
+            context.users.Add(user);
+            context.SaveChanges();
+            MessageBox.Show("Welcome to the club buddy!!!");
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

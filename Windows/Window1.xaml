@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Окно регистрации" Height="450" Width="700" Background="MediumAquamarine" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
     <Canvas>
-        <TextBox Text="asdasd" FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top" Name="EmailTextBox"/>
+        <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top" Name="EmailTextBox"/>
         <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="204" TextChanged="TextBox_TextChanged" Name="LoginTextBox"/>
         <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="254" HorizontalAlignment="Center" VerticalAlignment="Top" Name="passwordBox"/>
         <TextBox FontSize="20" FontWeight="Medium" Background="Azure" Height="30" Width="240" Canvas.Left="240" Canvas.Top="304" Name="passwordBox1"/>
@@ -17,5 +17,8 @@
         <TextBlock FontSize="12" Text="Пароль" TextWrapping="Wrap" TextAlignment="Center" Height="15" Width="136"  HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="194" Canvas.Top="238"/>
         <TextBlock FontSize="13" Text="Повторите пароль" TextWrapping="Wrap" TextAlignment="Center" Height="15" Width="160"  HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="218" Canvas.Top="287"/>
         <Button Click="vhod_Click" Name="vhod" Content="Есть аккаунт? Войти!" Canvas.Bottom="70" Canvas.Right="310" FontSize="15" HorizontalAlignment="Center" Canvas.Left="282" Canvas.Top="378" VerticalAlignment="Top" Width="156" Background="Transparent"/>
+        <Image Source="/images/free-icon-open-data-3513745.png" Height="26" Canvas.Top="256" Width="27" Canvas.Left="211" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+        <Image Source="/images/free-icon-open-data-3513745.png" Height="26" Canvas.Top="306" Width="28" Canvas.Left="210" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
+        <Image Source="/images/free-icon-transparency-12855605.png" Height="26" Canvas.Top="204" Width="27" Canvas.Left="211" HorizontalAlignment="Center" VerticalAlignment="Top"></Image>
     </Canvas>
 </Window>
